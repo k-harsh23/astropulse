@@ -1,29 +1,148 @@
-# Virtual Environment
-.venv/
-
-# Environment Variables
-.env
+# =========================
 
 # Python
-__pycache__/
-*.pyc
-*.pyo
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+
+.venv/
+venv/
+env/
+
+# Build Artifacts
+
+build/
+dist/
+*.egg-info/
+
+# =========================
+
+# Environment Variables
+
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
 
 # IDE
+
+# =========================
+
 .vscode/
 .idea/
 
-# Logs
-*.log
+# =========================
 
-# OS
+# OS Files
+
+# =========================
+
 .DS_Store
 Thumbs.db
 
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+logs/
+*.out
+
+# =========================
+
+# Pytest
+
+# =========================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+
+# Jupyter
+
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+
 # Data
+
+# =========================
+
 data/raw/*
 data/exports/*
+data/snapshots/*
 
-# Keep folders
 !data/raw/.gitkeep
 !data/exports/.gitkeep
+!data/snapshots/.gitkeep
+
+# =========================
+
+# Databricks
+
+# =========================
+
+.databricks/
+.dbx/
+
+# =========================
+
+# dbt
+
+# =========================
+
+dbt_packages/
+target/
+logs/
+
+# =========================
+
+# Streamlit
+
+# =========================
+
+.streamlit/secrets.toml
+
+# =========================
+
+# Temporary Files
+
+# =========================
+
+tmp/
+temp/
+*.tmp
+
+# =========================
+
+# Docker
+
+# =========================
+
+*.pid
+docker-data/
+
+# =========================
+
+# Terraform (Future)
+
+# =========================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
