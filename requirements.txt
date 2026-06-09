@@ -1,0 +1,11 @@
+requests
+pydantic
+python-dotenv
+
+prefect
+
+pika
+
+psycopg2-binary
+
+pytest
